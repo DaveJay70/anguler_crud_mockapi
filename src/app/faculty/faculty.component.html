@@ -1,0 +1,10 @@
+<div class="row">
+    <div class=" col-2 card g-1  m-3 border border-danger" *ngFor="let fac of data">
+        <img class="card-img-top " [src]="fac.FacultyImage" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-primary">{{fac.FacultyName}}</h5>
+          <p class="card-text text-danger">{{fac.FacultyDesignation}}</p>
+          <a routerLink="faculty/{{fac.id}}" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+</div>

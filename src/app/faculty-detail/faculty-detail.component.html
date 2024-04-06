@@ -1,0 +1,26 @@
+<div class="container mt-3 border border-3 border-primary rounded">
+    <div class="row">
+        <div class=" col-3 m-2 mb-5">
+            <img [src]="data.FacultyImage" [width]=300 [height]=300 />
+            <div class="col">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <h1 class="h1 text-primary">{{data.FacultyName}}</h1>
+                            <h5 class="h5 text-danger">{{data.FacultyDesignation}}</h5>
+                            <h5 class="h5 text-danger">{{data.FacultyEducationQualification}}</h5>
+                            <h5 class="h5 text-danger">{{data.FacultyExperience}}</h5>
+                            <h5 class="h5 text-danger">{{data.FacultyWorkingSince}}</h5>
+                            <button routerLink="/" class="btn btn-primary me-3">Back</button>
+                            <button class="btn btn-danger" (click)="Delete()">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
